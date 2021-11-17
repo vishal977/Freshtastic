@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Homepage() {
+export default function OrderHistory() {
     return (
         <div>
-          HOME
+            ORDER HISTORY
         </div>
     )
 }

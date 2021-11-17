@@ -10,7 +10,7 @@ export default function Navbar({ toggleSiteTheme }) {
       <LinksContainer> 
         <NavbarLink to = '/home'><FaHome/></NavbarLink>
         <NavbarLink to = '/cart'><FaShoppingCart/></NavbarLink>
-        <NavbarLink to = '/prevOrders'><FaHistory/></NavbarLink>
+        <NavbarLink to = '/orderhistory'><FaHistory/></NavbarLink>
         <NavbarLink to = '/profile'><FaUser/></NavbarLink>
         <ToggleTheme onClick = { toggleSiteTheme }/>
       </LinksContainer>
