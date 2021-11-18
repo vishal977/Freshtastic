@@ -11,6 +11,21 @@ export const ProductCardWrapper = styled.div`
     }
 `
 
+export const ProductName = styled.h3`
+    @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Handlee', cursive;
+    font-style: bold;
+`
+
+export const PriceTag = styled.h4`
+    text-align: center;
+    margin: 10px auto;
+    opacity: 0.8;
+    font-style: italic;
+`
+
 export const ProductCardImage = styled.img`
     position: relative;
     left: 0;
@@ -24,3 +39,4 @@ export const ProductCardImage = styled.img`
         opacity: 1.0;
     }
 `
+
