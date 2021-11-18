@@ -21,7 +21,7 @@ export const BgImg = styled.img`
     margin-bottom: -30px;
     z-index: 8;
     opacity: 0.8;    
-    transition: 0.5s;
+    transition: 0.4s;
 
     :hover{
         opacity: 1.0;
@@ -40,6 +40,7 @@ export const BgImgRight = styled.img`
     z-index: 8;
     opacity: 0.8;    
     transition: 0.4s;
+
 
     :hover{
         opacity: 1.0;

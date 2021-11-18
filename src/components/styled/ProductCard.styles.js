@@ -3,10 +3,24 @@ import styled from "styled-components";
 export const ProductCardWrapper = styled.div`
     width: 15rem;
     height: 18rem;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    background-color:  ${ ({theme}) => theme.cardbg };
+    border-radius: 15px;
+    overflow: hidden;
+    :hover {
+    }
+`
+
+export const ProductCardImage = styled.img`
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 10rem;
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.4s;
 
     :hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        opacity: 1.0;
     }
 `
