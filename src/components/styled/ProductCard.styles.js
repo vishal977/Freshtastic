@@ -8,6 +8,7 @@ export const ProductCardWrapper = styled.div`
     border-radius: 15px;
     overflow: hidden;
     :hover {
+        scale: 1.02;
     }
 `
 

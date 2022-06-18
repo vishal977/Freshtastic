@@ -1,11 +1,12 @@
 export const lightTheme = {
-    background: '#fbfbfb',
-    font: '#1c1018',
-    cardbg: '#ffcd48'
+    background: '#EAD7D1',
+    font: '#1f1a38',
+    cardbg: '#7dde92'
 }
 
 export const darkTheme = {
-    background: '#070707',
-    font: '#f7f9f7',
-    cardbg: '#bfffbc'
+    background: '#131517',
+    font: '#E8D2BC',
+    cardbg: '#07080D',
+    fontSecondary: '#F5EBE1'
 }
