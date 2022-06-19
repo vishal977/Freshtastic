@@ -5,11 +5,11 @@ export const ProductsContainer = styled.div`
     max-width: 700px;
     width: 700px;
     height: auto;
-    margin-left: 20%;
+    margin-left: 15%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
-    padding: 20px;
+    grid-gap: 10px;
+    padding-top: 70px;
     `
 
 export const SidebarContainer = styled.div`

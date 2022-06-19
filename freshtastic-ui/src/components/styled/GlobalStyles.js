@@ -10,5 +10,6 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Lato', sans-serif;
         margin: 0 0;
         overflow-x: hidden;
+        justify-content : center;
     }
 `
