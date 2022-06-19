@@ -20,6 +20,14 @@ export const ProductName = styled.h3`
     font-style: bold;
 `
 
+export const ProductDescription = styled.p`
+    @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Handlee', cursive;
+    font-size: 12px
+`
+
 export const PriceTag = styled.h4`
     text-align: center;
     margin: 10px auto;
