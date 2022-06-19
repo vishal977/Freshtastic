@@ -14,8 +14,8 @@ productsRouter.get('/', (req, res) => {
 })
 
 /* Individual product details */
-productsRouter.get('/:productId', (req, res) => {
-    Product.findById(req.params.productId)
+productsRouter.get('/:productCode', (req, res) => {
+    Product.findOne({ productCode: req.params.productCode })
         .then((product) => {
             res.json(product)
         }).catch(err => res.status(400).json(err))
@@ -30,13 +30,17 @@ productsRouter.post('/addProduct', (req, res) => {
 })
 
 /* Delete a product*/
-productsRouter.delete('/:productId', (req, res) => {
-    res.json({ message: `Product deleted` })
+productsRouter.delete('/:productCode', (req, res) => {
+   Product.deleteOne({ productCode: req.params.productCode })
+    .then(resp => res.json(`Deleted ${resp.deletedCount} product(s)`))
+    .catch(err => res.status(400).json(err))
 })
 
 /* Update a product*/
-productsRouter.patch('/:productId', (req, res) => {
-    res.json({ message: `Product updated` })
+productsRouter.patch('/:productCode', (req, res) => {
+    Product.findOneAndUpdate({ productCode: req.params.productCode }, req.body)
+        .then(resp => res.json(`Product updated successfully!`))
+        .catch(err => res.status(400).json(err))
 })
 
 
