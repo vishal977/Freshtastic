@@ -1,5 +1,5 @@
 const express = require('express')
-
+let Product = require('../models/product.model')
 const productsRouter = express.Router()
 
 /* 
@@ -8,17 +8,25 @@ const productsRouter = express.Router()
 
 /* List of all products */
 productsRouter.get('/', (req, res) => {
-    res.json({ message: `Getting all products` })
+    Product.find()
+        .then(products => res.json(products))
+        .catch(err => res.status(400).json(err))
 })
 
 /* Individual product details */
 productsRouter.get('/:productId', (req, res) => {
-    res.json({ message: `Get product by productId` })
+    Product.findById(req.params.productId)
+        .then((product) => {
+            res.json(product)
+        }).catch(err => res.status(400).json(err))
 })
 
 /* Create a new product*/
 productsRouter.post('/addProduct', (req, res) => {
-    res.json({ message: `New product added!` })
+    const newProduct = new Product(req.body)
+    newProduct.save()
+        .then(() => res.json({ message: `New product added!` }))
+        .catch((err) => res.status(400).json(err))
 })
 
 /* Delete a product*/

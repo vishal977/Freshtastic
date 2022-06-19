@@ -1,10 +1,13 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors')
 require('dotenv').config()
 const productRoutes = require('./routes/products')
 
-//Express application
+//Express application config
 const server = express()
+server.use(express.json())
+server.use(cors())
 
 /* Logging incoming traffic */
 server.use((request, response, next) => {
