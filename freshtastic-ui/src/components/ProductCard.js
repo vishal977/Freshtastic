@@ -10,7 +10,7 @@ export default function ProductCard() {
       <Card>
         <CardImgContainer>
           <img
-            href="#"
+            alt=""
             src="https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"
           />
         </CardImgContainer>
@@ -19,7 +19,7 @@ export default function ProductCard() {
           <h3>This is content</h3>
 
           <p>
-            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo libero ipsum consectetur. Officia
           </p>
         </CardContent>
       </Card>

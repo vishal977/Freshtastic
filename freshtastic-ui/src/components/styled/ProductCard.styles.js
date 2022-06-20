@@ -12,12 +12,13 @@ export const Container = styled.div`
 
 export const CardContent = styled.div`
   position: relative; 
-  top: -140px; 
-  padding: 10px 15px; 
+  top: -150px; 
+  padding: 8px 11px; 
   color: rgb(17, 17, 17); 
   text-align: center; 
   opacity: 0; 
   transition: all 0.3s ease-in-out 0s; 
+  font-size: 12px;
   
   h3 {
     margin-top: 0px;
@@ -30,13 +31,15 @@ export const Card = styled.div`
   max-width: 300px; 
   height: 215px; 
   background-color: rgb(255, 255, 255); 
-  margin: 30px 10px; padding: 20px 15px; 
-  display: flex; flex-direction: column; 
+  margin: 30px 10px; 
+  padding: 20px 15px; 
+  display: flex; 
+  flex-direction: column; 
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 20px; 
   transition: all 0.3s ease-in-out 0s; 
   border-radius: 15px;
   :hover {
-    height : 320px; 
+    height : 280px; 
   };
 
   :hover ${CardContent} {
@@ -52,7 +55,7 @@ export const CardImgContainer = styled.div`
   width: 260px; 
   height: 260px; 
   top: -40%; 
-  left: 8px; 
+  left: auto; 
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 20px; 
   z-index: 1;
   border-radius: 15px;
